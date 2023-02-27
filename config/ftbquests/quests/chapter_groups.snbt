@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "3C33FB5F17A2BCC3", title: "&5&lC-I：準備開始" }
+		{ id: "3C3A2FF2DA37F7A6", title: "&5&lC-II：前進一步" }
+		{ id: "14AEC22576376CD9", title: "&5&lC-III：繼續發展第二步" }
+		{ id: "25735415D0D506DF", title: "&5&lC-IV：選擇路線" }
+		{ id: "661E227EDDD6E790", title: "&5&lC-V：遊戲終章" }
+	]
+}

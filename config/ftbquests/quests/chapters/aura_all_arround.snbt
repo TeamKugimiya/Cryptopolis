@@ -1,0 +1,666 @@
+{
+	id: "26E8CB7365900AE1"
+	group: "25735415D0D506DF"
+	order_index: 0
+	filename: "aura_all_arround"
+	title: "&b&lC.IV-I &9<魔法>：&r靈氣無所不在"
+	subtitle: ["自然靈氣"]
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "森林儀式"
+			x: 0.0d
+			y: -3.0d
+			shape: "hexagon"
+			subtitle: "獲得所有 &6[森林儀式]&r 的必需品"
+			dependencies: ["07596BC639A2A179"]
+			size: 2.0d
+			id: "016BB16316AD7DB8"
+			tasks: [
+				{
+					id: "109A82A053032A28"
+					type: "item"
+					item: "naturesaura:wood_stand"
+					count: 8L
+				}
+				{
+					id: "6A915113148BF7C0"
+					type: "item"
+					item: "naturesaura:gold_powder"
+					count: 16L
+				}
+				{
+					id: "5DBFAD9EEF711FDE"
+					type: "item"
+					item: "minecraft:oak_sapling"
+				}
+			]
+			rewards: [
+				{
+					id: "74B0F65BBF45AC40"
+					type: "item"
+					item: "naturesaura:eye"
+				}
+				{
+					id: "3F9388FA36506024"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "naturesaura:book"
+						}
+					}
+				}
+				{
+					id: "7F4CCA4C70ADFA5F"
+					type: "command"
+					auto: "invisible"
+					command: "/create ponder naturesaura:wood_stand @p"
+					player_command: false
+				}
+				{
+					id: "0CA3A24E3B244D60"
+					type: "item"
+					item: "cryptopolis:c_bucks"
+				}
+			]
+		}
+		{
+			title: "緋紅祭壇"
+			x: 3.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "在地獄打造 &6[自然祭壇]&r"
+			dependencies: ["059DBFF088612D7B"]
+			id: "2BA842344E7CC2F9"
+			tasks: [
+				{
+					id: "7F701ECB1BC82457"
+					type: "item"
+					item: "naturesaura:nature_altar"
+				}
+				{
+					id: "116E6C4CA6F6B2D4"
+					type: "item"
+					item: "minecraft:crimson_planks"
+					count: 20L
+				}
+				{
+					id: "78E4DE6C4F60CF08"
+					type: "item"
+					item: "minecraft:red_nether_bricks"
+					count: 4L
+				}
+				{
+					id: "0C394A45B6BFAFA3"
+					type: "item"
+					item: "minecraft:nether_bricks"
+					count: 16L
+				}
+				{
+					id: "60A913B0ED260EE5"
+					type: "item"
+					item: "naturesaura:gold_nether_brick"
+					count: 8L
+				}
+				{
+					id: "6B20F1B812EA027B"
+					type: "observation"
+					title: "觀察 &6[緋紅祭壇]"
+					icon: "minecraft:crimson_nylium"
+					timer: 0L
+					observe_type: 2
+					to_observe: "naturesaura:nature_altar[nether=true]"
+				}
+			]
+			rewards: [{
+				id: "2B79E273232A43E6"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "瓶中的鬼魂"
+			x: -4.0d
+			y: 1.5d
+			shape: "diamond"
+			subtitle: "在 &5[地獄] &r 中使用 &6[瓶與塞]&r 取得 &6[瓶裝鬼魂]&r"
+			id: "44703B9020CFD378"
+			tasks: [
+				{
+					id: "39957872DA4A3813"
+					type: "item"
+					item: "naturesaura:bottle_two_the_rebottling"
+				}
+				{
+					id: "6989D8D2E6FE5B7E"
+					type: "item"
+					item: {
+						id: "naturesaura:aura_bottle"
+						Count: 1b
+						tag: {
+							stored_type: "naturesaura:nether"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "33B99A8D0526D2DC"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "瓶中的陽光"
+			x: -4.0d
+			y: 0.5d
+			shape: "diamond"
+			subtitle: "在 &a[主世界]&r 中使用 &6[瓶與塞]&r 取得 &6[瓶裝陽光]&r"
+			id: "183AF6528A467B57"
+			tasks: [
+				{
+					id: "30808127DC103DC0"
+					type: "item"
+					item: "naturesaura:bottle_two_the_rebottling"
+				}
+				{
+					id: "2787D89C738791F2"
+					type: "item"
+					item: {
+						id: "naturesaura:aura_bottle"
+						Count: 1b
+						tag: {
+							stored_type: "naturesaura:overworld"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "07AEA07FF3747C8E"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "憂傷 ψ"
+			x: -3.5d
+			y: -1.5d
+			subtitle: "製作 &6[憂傷印記]"
+			dependencies: ["016BB16316AD7DB8"]
+			id: "099E538D3BE53E3F"
+			tasks: [{
+				id: "23991C96D6231228"
+				type: "item"
+				item: "naturesaura:token_sorrow"
+			}]
+			rewards: [{
+				id: "622D018B3B325FA4"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "愉悅 Δ"
+			x: 3.5d
+			y: -1.5d
+			subtitle: "製作 &6[愉悅印記]"
+			dependencies: ["016BB16316AD7DB8"]
+			id: "059DBFF088612D7B"
+			tasks: [{
+				id: "5044ED2AB3AD0FDF"
+				type: "item"
+				item: "naturesaura:token_joy"
+			}]
+			rewards: [{
+				id: "1AB668D6C18339D8"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "恐懼 Ω"
+			x: -1.0d
+			y: -1.0d
+			subtitle: "製作 &6[恐懼印記]"
+			dependencies: ["016BB16316AD7DB8"]
+			id: "2CB8841F954733B3"
+			tasks: [{
+				id: "7D0EDCBFD66B5599"
+				type: "item"
+				item: "naturesaura:token_fear"
+			}]
+			rewards: [{
+				id: "5264634511AC12BF"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "憤怒 λ"
+			x: 1.0d
+			y: -1.0d
+			subtitle: "製作 &6[憤怒印記]"
+			dependencies: ["016BB16316AD7DB8"]
+			id: "2517786321F854CB"
+			tasks: [{
+				id: "4C42B9DF5E6E9FD3"
+				type: "item"
+				item: "naturesaura:token_anger"
+			}]
+			rewards: [{
+				id: "737F742207F0ED3F"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "鬼魂灌注金"
+			x: 2.5d
+			y: 0.5d
+			subtitle: "製作 &6[汙染黃金塊]"
+			dependencies: ["2BA842344E7CC2F9"]
+			id: "739BE992BCFA93CE"
+			tasks: [
+				{
+					id: "532B6558720EC8CC"
+					type: "item"
+					item: "naturesaura:tainted_gold"
+				}
+				{
+					id: "3D2DC54A444746BF"
+					type: "item"
+					item: "naturesaura:tainted_gold_block"
+				}
+			]
+			rewards: [{
+				id: "347D2ACF048768EC"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "在主世界打造 &6[自然祭壇]&r"
+			dependencies: ["059DBFF088612D7B"]
+			id: "545747B663BFAFB4"
+			tasks: [
+				{
+					id: "29E25B24C5C1219F"
+					type: "item"
+					item: "naturesaura:nature_altar"
+				}
+				{
+					id: "382D57345C7B9B74"
+					type: "item"
+					item: "minecraft:oak_planks"
+					count: 20L
+				}
+				{
+					id: "02FE81083D8B50E3"
+					type: "item"
+					item: "minecraft:chiseled_stone_bricks"
+					count: 4L
+				}
+				{
+					id: "7AB9AD41D60799FB"
+					type: "item"
+					item: "minecraft:stone_bricks"
+					count: 16L
+				}
+				{
+					id: "7D4775C0D8A81F61"
+					type: "item"
+					item: "naturesaura:gold_brick"
+					count: 8L
+				}
+				{
+					id: "1029326F1279823C"
+					type: "observation"
+					title: "觀察 &6[自然祭壇]"
+					icon: "minecraft:grass_block"
+					timer: 0L
+					observe_type: 2
+					to_observe: "naturesaura:nature_altar[nether=false]"
+				}
+			]
+			rewards: [{
+				id: "2153A68C0A333EEF"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.5d
+			subtitle: "製作 &6[灌注鐵塊]"
+			dependencies: ["545747B663BFAFB4"]
+			id: "6D9FBF11B073F184"
+			tasks: [
+				{
+					id: "4BD0F16612C2A49B"
+					type: "item"
+					item: "naturesaura:infused_iron"
+				}
+				{
+					id: "7515E124ABE105CD"
+					type: "item"
+					item: "naturesaura:infused_iron_block"
+				}
+			]
+			rewards: [{
+				id: "64F27289940D9FDD"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: [
+				"2517786321F854CB"
+				"2CB8841F954733B3"
+				"059DBFF088612D7B"
+				"099E538D3BE53E3F"
+				"334EB58CE04A2FCA"
+				"739BE992BCFA93CE"
+				"6D9FBF11B073F184"
+			]
+			size: 1.5d
+			id: "74C9F405E5ED67B9"
+			tasks: [{
+				id: "5EA36D7264F715F6"
+				type: "item"
+				item: "naturesaura:offering_table"
+			}]
+			rewards: [{
+				id: "20AD4B32C3AB50A0"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "與神同行"
+			x: -2.0d
+			y: 1.0d
+			subtitle: "製作 &6[呼喚之魂]"
+			dependencies: [
+				"44703B9020CFD378"
+				"183AF6528A467B57"
+			]
+			id: "334EB58CE04A2FCA"
+			tasks: [{
+				id: "4C2082746599CA05"
+				type: "item"
+				item: "naturesaura:calling_spirit"
+			}]
+			rewards: [{
+				id: "1E6A30729E7E6E86"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "超快感"
+			x: 2.5d
+			y: 3.0d
+			subtitle: "製作 &6[欣快印記]"
+			dependencies: ["74C9F405E5ED67B9"]
+			id: "2D9C5C65412BE684"
+			tasks: [{
+				id: "7253A2519FCE94DD"
+				type: "item"
+				item: "naturesaura:token_euphoria"
+			}]
+			rewards: [{
+				id: "53057708CD17A0D0"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "怒不可遏"
+			x: -2.5d
+			y: 3.0d
+			subtitle: "獲得 &6[狂怒印記]"
+			dependencies: ["74C9F405E5ED67B9"]
+			id: "6DEB1D6999806F5F"
+			tasks: [{
+				id: "158D8B2B56BFDB82"
+				type: "item"
+				item: "naturesaura:token_rage"
+			}]
+			rewards: [{
+				id: "02F3ACFD32E3B470"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "嚇死人不償命"
+			x: -1.5d
+			y: 3.5d
+			subtitle: "獲得 &6[驚駭印記]"
+			dependencies: ["74C9F405E5ED67B9"]
+			id: "7266E674531EEC08"
+			tasks: [{
+				id: "6622862EBDB021FB"
+				type: "item"
+				item: "naturesaura:token_terror"
+			}]
+			rewards: [{
+				id: "42C8B42BE75CE55C"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "比悲傷還要悲傷"
+			x: 1.5d
+			y: 3.5d
+			subtitle: "獲得 &6[悲痛印記]"
+			dependencies: ["74C9F405E5ED67B9"]
+			id: "47B8DC6ECED72D01"
+			tasks: [{
+				id: "765E557FC892D795"
+				type: "item"
+				item: "naturesaura:token_grief"
+			}]
+			rewards: [{
+				id: "094D1C51A5720656"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "天堂鍛造的"
+			x: 0.0d
+			y: 3.75d
+			subtitle: "獲得 &6[蒼穹錠]"
+			dependencies: ["74C9F405E5ED67B9"]
+			size: 1.25d
+			id: "2833EE5481B08A48"
+			tasks: [{
+				id: "25A6D0A7A8A79E2A"
+				type: "item"
+				item: "naturesaura:sky_ingot"
+			}]
+			rewards: [{
+				id: "289E8D7B61C9FD36"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "閃閃發光"
+			x: 0.0d
+			y: -5.0d
+			subtitle: "獲得 &6[黃金葉] "
+			description: [
+				""
+				"對樹葉使用 &6[閃耀纖維]&r 取得 &6[黃金葉]&r"
+			]
+			size: 2.0d
+			id: "07596BC639A2A179"
+			tasks: [
+				{
+					id: "298BF822EE871203"
+					type: "item"
+					item: "naturesaura:gold_fiber"
+				}
+				{
+					id: "04741BBF430193BA"
+					type: "item"
+					item: "naturesaura:gold_leaf"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "0756AEB18329EDEE"
+					type: "item"
+					item: "naturesaura:gold_leaf"
+					random_bonus: 3
+				}
+				{
+					id: "0F4D704FD3B40715"
+					type: "item"
+					item: "cryptopolis:c_bucks"
+				}
+			]
+		}
+		{
+			title: "超級變變變！"
+			x: 2.5d
+			y: 5.0d
+			shape: "hexagon"
+			subtitle: "製作 &6[嬗變催化器]"
+			dependencies: [
+				"2D9C5C65412BE684"
+				"47B8DC6ECED72D01"
+				"2833EE5481B08A48"
+			]
+			size: 1.5d
+			id: "629786A48CDD2242"
+			tasks: [{
+				id: "1F88BCC685A5C196"
+				type: "item"
+				item: "naturesaura:conversion_catalyst"
+			}]
+			rewards: [{
+				id: "2E302ABC0593BFD4"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "諧音梗已經夠多了..."
+			x: -2.5d
+			y: 5.0d
+			shape: "hexagon"
+			subtitle: "製作 &6[崩壞催化器]"
+			dependencies: [
+				"6DEB1D6999806F5F"
+				"7266E674531EEC08"
+				"2833EE5481B08A48"
+			]
+			size: 1.5d
+			id: "33F414D1466D2A28"
+			tasks: [{
+				id: "76E1CE88F9DEA6C9"
+				type: "item"
+				item: "naturesaura:crushing_catalyst"
+			}]
+			rewards: [{
+				id: "331D7C1668E4EDE2"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "高科技石英粉"
+			x: -2.25d
+			y: 6.75d
+			shape: "octagon"
+			subtitle: "獲得 &6[賽特斯石英粉]"
+			dependencies: ["33F414D1466D2A28"]
+			size: 1.5d
+			id: "3AB63CFE757A3155"
+			tasks: [{
+				id: "3A5DA4D8A213C656"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
+			rewards: [{
+				id: "47594EA8C64444BB"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "詭異的粉"
+			x: 2.25d
+			y: 6.75d
+			shape: "octagon"
+			subtitle: "獲得 &6[福魯伊克斯粉]"
+			dependencies: ["629786A48CDD2242"]
+			size: 1.5d
+			id: "1BC2865694E96D24"
+			tasks: [{
+				id: "3856D45CFE451C19"
+				type: "item"
+				item: "ae2:fluix_dust"
+			}]
+			rewards: [{
+				id: "229599C5E389AF65"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "石英的夢想"
+			x: -0.625d
+			y: 5.625d
+			shape: "rsquare"
+			subtitle: "製作 &6[賽特斯石英水晶]"
+			dependencies: ["3AB63CFE757A3155"]
+			size: 1.25d
+			id: "3C0E799AE6C0EECF"
+			tasks: [{
+				id: "37CF4C040E49434C"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
+			}]
+			rewards: [{
+				id: "7B9AB594FCF263CE"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "像外星製作的水晶"
+			x: 0.625d
+			y: 5.625d
+			shape: "rsquare"
+			subtitle: "製作 &6[福魯伊克斯水晶]"
+			dependencies: ["1BC2865694E96D24"]
+			size: 1.25d
+			id: "28185377C376D37E"
+			tasks: [{
+				id: "1E474BD641A090CA"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+			rewards: [{
+				id: "6BEF38476203E3C8"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

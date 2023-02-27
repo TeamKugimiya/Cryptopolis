@@ -1,0 +1,241 @@
+{
+	id: "58D0EBB35A455D00"
+	group: ""
+	order_index: 0
+	filename: "informations"
+	title: "&f&l資訊"
+	icon: "minecraft:paper"
+	subtitle: ["關於異獄謎蹤"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 2.0d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "supplementaries:textures/gui/book/icon/patreon.png"
+			hover: [
+				"到 Patreon 支持 Crypt1C！"
+				""
+				"特別感謝："
+				"⁎ zsdfs"
+				"⁎ Krody"
+				"⁎ Mozair Carmo"
+				"給我的支持 :D"
+			]
+			click: "https://www.patreon.com/crypt1k"
+			dev: false
+			corner: false
+		}
+		{
+			x: -7.0d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "supplementaries:textures/gui/book/icon/patreon.png"
+			hover: ["到 Patreon 支持 Benbenlaw！"]
+			click: "https://www.patreon.com/benbenlaw"
+			dev: false
+			corner: false
+		}
+		{
+			x: -8.0d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "supplementaries:textures/gui/book/icon/discord.png"
+			hover: ["加入 Benbenlaw 的 Discord！"]
+			click: "https://discord.gg/H67ecFVySC"
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.0d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "supplementaries:textures/gui/book/icon/discord.png"
+			hover: ["加入 Crypt1C 的 Discord！"]
+			click: "https://discord.gg/834pwJ9"
+			dev: false
+			corner: false
+		}
+		{
+			x: -2.5d
+			y: -8.0d
+			width: 20.0d
+			height: 6.0d
+			rotation: 0.0d
+			image: "cryptopolis:textures/title_transparent.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "你已準備好了！"
+			icon: "cryptopolis:star"
+			x: -2.5d
+			y: -2.25d
+			shape: "pentagon"
+			subtitle: "&6祝好運！"
+			dependencies: [
+				"296711B57B3D4608"
+				"2402C7DBD022A01B"
+				"13803F4676DCAEBC"
+				"41DAF18E30229E57"
+				"16D6C25570B49244"
+			]
+			size: 2.5d
+			id: "60F1CF0E005D4F29"
+			tasks: [{
+				id: "13B90240673C4668"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "20367B66444A6B0C"
+					type: "item"
+					item: "tempad:tempad"
+				}
+				{
+					id: "72FBA7F84BAC8617"
+					type: "item"
+					item: "cryptopolis:c_bucks"
+				}
+			]
+		}
+		{
+			title: "我們是誰？"
+			x: -2.5d
+			y: -5.0d
+			shape: "heart"
+			subtitle: "關於作者"
+			description: [
+				"這了不起的模組包是由 &b&lBenbenlaw&r 和 &5&lCrypt1C&r 共同合作完成的。"
+				""
+				"感謝 &6Wolfie&r 提供的故事設定 :)"
+			]
+			size: 1.5d
+			id: "296711B57B3D4608"
+			tasks: [{
+				id: "446823AE8F2EF48D"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "31512C956B8E267E"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "一般資訊"
+			x: -5.0d
+			y: -5.0d
+			shape: "rsquare"
+			subtitle: "怪物生成，遊戲機制，等..."
+			description: [
+				"熔岩怪：玩家擊殺時會掉落[空白碎片]"
+				""
+				"熾足獸：利用它在熔岩上快速移動"
+				""
+				"地獄生物：地獄幽靈和烈焰使者不會自然生成。但殭屍化豬布靈和豬布靈會自然生成。"
+			]
+			id: "2402C7DBD022A01B"
+			tasks: [{
+				id: "1446F2610B92DD06"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "12983B8C24AF3902"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "故事"
+			x: 0.0d
+			y: -5.0d
+			shape: "rsquare"
+			subtitle: "給那些喜歡聽故事的人"
+			description: ["我們是誰，我們為什麼要聯繫你並不重要。如您所知，太空是不可預測的，而你的傳送門並不是非常穩定。很抱歉要帶給您這個壞消息，但您最終進入了地獄，而不是你的家。好消息是，這份文件會是你返回主世界的指南，並引導你如何製作出&d[無盡之秘]&r，這是我們希望你能夠製作的神器。有了這個，你就有資格加入我們的行列。當你擁有它時，我們會與您聯繫。相信我，你一定會需要它的。"]
+			id: "13803F4676DCAEBC"
+			tasks: [{
+				id: "32B87EBA0E63EA4E"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "18D385303FC23FCB"
+				type: "item"
+				item: "cryptopolis:c_bucks"
+			}]
+		}
+		{
+			title: "販賣機！"
+			x: -4.0d
+			y: -5.0d
+			shape: "rsquare"
+			subtitle: "立刻！購買！"
+			description: [
+				"販賣機只會賣&6[作物方程式] &r模組的食物或作物"
+				""
+				"商品隨時間隨機重生"
+			]
+			id: "41DAF18E30229E57"
+			tasks: [{
+				id: "2AC7605CF262F0B0"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "2A8C180028D04E57"
+					type: "item"
+					item: "vm:vending_machine"
+				}
+				{
+					id: "019B0E9891E0BBF5"
+					type: "item"
+					item: "cryptopolis:c_bucks"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -5.0d
+			shape: "rsquare"
+			subtitle: "探索與冒險"
+			description: [
+				"&b&l骷髏塔："
+				""
+				"內含基礎&6戰利品箱&r還有很多的骷髏"
+				"在塔頂會發現&6[召喚祭壇]&r和一個&6[儲物箱]&r，箱中有對儀式有用的物品。"
+			]
+			id: "16D6C25570B49244"
+			tasks: [{
+				id: "4E549B2603F75557"
+				type: "checkmark"
+				title: "自訂結構"
+			}]
+			rewards: [
+				{
+					id: "7AA01CD4F445AFCC"
+					type: "item"
+					item: "cryptopolis:c_bucks"
+				}
+				{
+					id: "728A30E43CCF4CB9"
+					type: "item"
+					item: "minecraft:spyglass"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}
