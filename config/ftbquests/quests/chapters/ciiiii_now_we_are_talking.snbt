@@ -13,7 +13,7 @@
 			x: -0.5d
 			y: -1.0d
 			shape: "gear"
-			subtitle: "製作 &6[機械擠出機]"
+			subtitle: "製作 &6[機械造石機]"
 			dependencies: [
 				"20AD6967879F38D1"
 				"07BBCF2BD1D50AD7"
@@ -32,7 +32,7 @@
 				{
 					id: "56F145EA20AA2731"
 					type: "command"
-					title: "關於 [機械擠出機] 的教學"
+					title: "關於 [機械造石機] 的教學"
 					auto: "invisible"
 					command: "/create ponder create_mechanical_extruder:mechanical_extruder @p"
 					player_command: true

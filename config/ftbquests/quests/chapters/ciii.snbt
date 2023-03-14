@@ -704,7 +704,7 @@
 			x: 0.0d
 			y: 7.0d
 			shape: "octagon"
-			subtitle: "製作 &6[機械擠出機]"
+			subtitle: "製作 &6[機械造石機]"
 			dependencies: ["25A0A1A34F9BBBB0"]
 			size: 2.0d
 			id: "1AAF9BF63DE798B8"
