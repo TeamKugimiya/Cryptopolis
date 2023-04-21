@@ -334,7 +334,7 @@
 		{
 			x: -1.5d
 			y: 3.0d
-			subtitle: "獲得 &6[日長石方塊]"
+			subtitle: "獲得 &6[日長玉石方塊]"
 			dependencies: ["5B3BB0C49AB479FC"]
 			id: "2A8BDDE8BA2A96DA"
 			tasks: [{

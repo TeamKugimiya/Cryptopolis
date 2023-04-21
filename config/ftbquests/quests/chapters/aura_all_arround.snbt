@@ -336,7 +336,7 @@
 		{
 			x: 2.5d
 			y: 1.5d
-			subtitle: "製作 &6[灌注鐵塊]"
+			subtitle: "製作 &6[灌注鐵方塊]"
 			dependencies: ["545747B663BFAFB4"]
 			id: "6D9FBF11B073F184"
 			tasks: [
