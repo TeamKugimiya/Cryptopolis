@@ -1,4 +1,4 @@
-name: 模組翻譯打包流程
+name: 模組包補丁打包流程
 
 on:
   workflow_dispatch:
