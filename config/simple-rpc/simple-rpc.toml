@@ -40,7 +40,7 @@
 	#The first line of text under the app name
 	description = "%player% 目前正在發呆"
 	#The seconds line of text under the app name
-	state = "停留在標題畫面發呆"
+	state = "停留在標題畫面"
 	#The Asset ID of the image to display as the large image
 	largeImageKey = ["mclogonew"]
 	#The text that gets displayed when the large image is hovered
