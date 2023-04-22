@@ -1,0 +1,5 @@
+gamma:1.0
+resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","quark:emote_resources","file/ModsTranslationPack-1.19.x.zip","file/Cryptopolis-Patches.zip"]
+incompatibleResourcePacks:["quark:emote_resources","file/ModsTranslationPack-1.19.x.zip"]
+lang:zh_tw
+mipmapLevels:0
